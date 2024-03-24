@@ -1,0 +1,23 @@
+{
+  "Metadata": {
+    "title": "title",
+    "description": "description",
+    "OpenGraph": {
+      "title": "title",
+      "description": "description",
+      "site": "site",
+      "img-alt": "img-alt"
+    }
+  },
+  "NotFound": {
+    "title": "Not Found Page"
+  },
+  "Error": {
+    "title": "Error!"
+  },
+  "Navbar": {},
+  "Footer": {},
+  "Home": {
+    "title": "Home"
+  }
+}

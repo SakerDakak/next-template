@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**************************/
+/* Import Basic */
+/**************************/
+
+@import url("./basic/classes.css");
+@import url("./basic/responsive.css");
+@import url("./basic/shadcn-ui.css");
+@import url("./basic/reset.css");

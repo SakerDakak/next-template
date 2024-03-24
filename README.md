@@ -1,0 +1,16 @@
+- PWA ✔️
+- Metadata ✔️
+- Open Graph ✔️
+- Favicon ✔️
+- Multi Lunguage ✔️
+- Dark & Light Theme ✔️
+- Responsive ✔️
+- Custom Not Fond Page 404 ✔️
+- Icons ✔️
+- Local Data
+- Controller in Page
+
+- Logo
+- Navbar
+- Footer
+- Info

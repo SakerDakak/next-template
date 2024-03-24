@@ -1,0 +1,23 @@
+{
+  "Metadata": {
+    "title": "عنوان",
+    "description": "وصف",
+    "OpenGraph": {
+      "title": "عنوان",
+      "description": "وصف",
+      "site": "اسم الموقع",
+      "img-alt": "وصف الصورة"
+    }
+  },
+  "NotFound": {
+    "title": "الصفحة غير موجودة"
+  },
+  "Error": {
+    "title": "!خطاء"
+  },
+  "Navbar": {},
+  "Footer": {},
+  "Home": {
+    "title": "الصفحة الرئيسية"
+  }
+}

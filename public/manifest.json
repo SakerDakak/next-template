@@ -1,0 +1,57 @@
+{
+  "name": "NAME",
+  "short_name": "NAME",
+  "description": "DESCRIPTION",
+  "theme_color": "#0000FF",
+  "background_color": "#000000",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+
+  "icons": [
+    {
+      "src": "/favicon/apple-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon/android-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon/android-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "NAME",
+      "short_name": "NAME",
+      "description": "DESCRIPTION",
+      "url": "/path",
+      "icons": [{ "src": "/pwa/shortcuts/shortcut-1.jpg", "sizes": "192x192" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "label": "NAME",
+      "src": "/pwa/screenshots/screenshot-1.jpg",
+      "sizes": "1920x1080",
+      "type": "image/jpg",
+      "form_factor": "wide"
+    },
+    {
+      "label": "NAME",
+      "src": "/pwa/screenshots/screenshot-mobile-1.jpg",
+      "sizes": "1080x1920",
+      "type": "image/jpg",
+      "form_factor": "narrow"
+    }
+  ]
+}
