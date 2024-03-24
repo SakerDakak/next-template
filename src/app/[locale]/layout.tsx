@@ -3,6 +3,7 @@ import { Cairo } from "next/font/google";
 import { ReactNode } from "react";
 import TranslationX from "@/config/translation/translation";
 import InfoX from "@/config/info/info";
+import { NextUIProvider } from "@nextui-org/react";
 
 const font = Cairo({ subsets: ["arabic"] });
 
