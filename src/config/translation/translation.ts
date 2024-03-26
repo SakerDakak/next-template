@@ -1,6 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
-import { Pathnames } from "next-intl/navigation";
 import { LocaleName, LocalePrefix } from "../../data/types/basic/translation";
 import { TranslationNamespaceX } from "./namespace";
 
@@ -14,15 +13,6 @@ export default class TranslationX {
   static readonly defaultLocale = "en";
   static readonly locales = ["en", "ar"];
   static readonly localePrefix = LocalePrefix.never;
-  // change path name by language
-  static readonly pathnames = {
-    "/": "/",
-    // '/pathname': {
-    //   en: '/pathname',
-    //   de: '/pfadnamen'
-    // }
-  } satisfies Pathnames<typeof this.locales>;
-
   static readonly localeNames: LocaleName[] = [
     { name: "English", code: "en" },
     { name: "عربي", code: "ar" },

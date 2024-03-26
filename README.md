@@ -11,6 +11,5 @@
 - Controller in Page
 
 - Logo
-- Navbar
 - Footer
 - Info

@@ -5,7 +5,7 @@ export default class ThemeX {
   static readonly themes = ["dark", "light"];
   //--------------------------------------------------------------------
   // Functions
-  static currentLocal = () => localStorage.getItem("theme");
+  static currentTheme = () => localStorage.getItem("theme");
 }
 // import {useTheme} from "next-themes";
 // const {resolvedTheme} = useTheme();

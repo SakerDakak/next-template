@@ -1,7 +1,8 @@
 export enum TranslationNamespaceX {
-  Metadata = "Metadata",
-  NotFound = "NotFound",
-  Error = "Error",
-  Navbar = "Navbar",
-  Footer = "Footer",
+  basic ="Basic",
+  metadata = "Metadata",
+  notFound = "NotFound",
+  error = "Error",
+  navbar = "Navbar",
+  footer = "Footer",
 }

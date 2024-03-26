@@ -1,6 +1,7 @@
 export default class ImageX {
   // Logo
-  static readonly logo: string = "/logo/logo.svg";
+  static readonly logo: string = "/favicon/android-512x512.png";
+  // static readonly logo: string = "/logo/logo.svg";
   static readonly logo_v: string = "/logo/logo-v.svg";
   static readonly logo_h: string = "/logo/logo-h.svg";
   static readonly logo_symbol: string = "/logo/logo-symbol.svg";
@@ -13,5 +14,5 @@ export default class ImageX {
   //   static readonly names: string = "/images/.png";
 
   // Background
-    static readonly background: string = "/images/background.png";
+  static readonly background: string = "/images/background.png";
 }

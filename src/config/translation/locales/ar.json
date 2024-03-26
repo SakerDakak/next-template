@@ -1,4 +1,7 @@
 {
+  "Basic":{
+    "logo-alt": "وصف الشعار"
+  },
   "Metadata": {
     "title": "عنوان",
     "description": "وصف",
@@ -10,13 +13,20 @@
     }
   },
   "NotFound": {
-    "title": "الصفحة غير موجودة"
+    "title": "الصفحة غير موجودة",
+    "go-home":"العودة إلى الرئيسية"
   },
   "Error": {
     "title": "!خطاء"
   },
-  "Navbar": {},
-  "Footer": {},
+  "Navbar": {
+    "home": "الرئيسية",
+    "about": "حول",
+    "contant":"تواصل معنا"
+  },
+  "Footer": {
+    "copyright": "حقوق الطبع والنشر © {year}، جميع الحقوق محفوظة."
+  },
   "Home": {
     "title": "الصفحة الرئيسية"
   }

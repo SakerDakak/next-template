@@ -1,6 +1,6 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 import { nextui } from "@nextui-org/react";
-import  animate  from "tailwindcss-animate";
+import animate from "tailwindcss-animate";
 
 const config = {
   darkMode: ["class"],
@@ -21,6 +21,17 @@ const config = {
       },
     },
     extend: {
+      height: {
+        nav: "4rem",
+      },
+      margin: {
+        nav: "4rem",
+      },
+      padding: {
+        app: "2rem",
+        "app-lg": "6rem",
+        "app-xl": "8rem",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -80,4 +91,4 @@ const config = {
   plugins: [nextui(), animate],
 } satisfies Config;
 
-export default config
+export default config;

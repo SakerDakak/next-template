@@ -3,7 +3,9 @@ import { Cairo } from "next/font/google";
 import { ReactNode } from "react";
 import TranslationX from "@/config/translation/translation";
 import InfoX from "@/config/info/info";
-import { NextUIProvider } from "@nextui-org/react";
+import Header from "@/ui/sections/header/header";
+import Footer from "@/ui/sections/footer/footer";
+import type { Viewport } from "next";
 
 const font = Cairo({ subsets: ["arabic"] });
 
@@ -17,13 +19,27 @@ export function generateStaticParams() {
 }
 
 //====================================================================================
+// Viewport
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
+};
+
+//====================================================================================
 // Metadata
 export async function generateMetadata({
   params: { locale },
 }: Omit<Props, "children">) {
   const t = await TranslationX.getTranslations({
     locale,
-    namespace: TranslationX.namespace.Metadata,
+    namespace: TranslationX.namespace.metadata,
   });
 
   return {
@@ -65,12 +81,14 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
   TranslationX.setRequestLocale(locale);
 
   return (
-    <html lang={locale} dir={locale} suppressHydrationWarning>
-      <body className={font.className}>
+    <html lang={locale} className={locale} suppressHydrationWarning>
+      <body className={font.className} suppressHydrationWarning={true}>
         <ThemeProvider>
-          <div className="flex flex-col justify-between min-h-screen w-full">
-            {children}
-          </div>
+          <main className="flex flex-col justify-between min-h-screen w-full">
+            <Header />
+            <div className="mt-nav">{children}</div>
+            <Footer />
+          </main>
         </ThemeProvider>
       </body>
     </html>

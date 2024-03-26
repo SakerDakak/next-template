@@ -1,4 +1,7 @@
 {
+  "Basic": {
+    "logo-alt": "Logo"
+  },
   "Metadata": {
     "title": "title",
     "description": "description",
@@ -10,13 +13,20 @@
     }
   },
   "NotFound": {
-    "title": "Not Found Page"
+    "title": "Not Found Page",
+    "go-home": "Go Home"
   },
   "Error": {
     "title": "Error!"
   },
-  "Navbar": {},
-  "Footer": {},
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "contant": "Contant Us"
+  },
+  "Footer": {
+    "copyright": "Copyright © {year}, All Rights Reserved."
+  },
   "Home": {
     "title": "Home"
   }
