@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { FaSquareXTwitter, FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsGlobe } from "react-icons/bs";
 import { IoClose, IoSunnyOutline } from "react-icons/io5";
 import { IoIosMenu } from "react-icons/io";
 
@@ -29,6 +29,8 @@ export default class IconX {
   // Theme Mode
   static readonly darkTheme = BsFillMoonStarsFill;
   static readonly lightTheme = IoSunnyOutline;
+
+  static readonly language = BsGlobe;
 
   // Navbar Mobile
   static readonly menuOpen = IoIosMenu;

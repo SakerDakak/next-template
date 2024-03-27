@@ -1,7 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { LocaleName, LocalePrefix } from "../../data/types/basic/translation";
-import { TranslationNamespaceX } from "./namespace";
+import { TranslationNamespaceX } from "./config/namespace";
 
 export default class TranslationX {
   //--------------------------------------------------------------------
@@ -14,8 +14,8 @@ export default class TranslationX {
   static readonly locales = ["en", "ar"];
   static readonly localePrefix = LocalePrefix.never;
   static readonly localeNames: LocaleName[] = [
-    { name: "English", code: "en" },
-    { name: "عربي", code: "ar" },
+    { name: "English", code: "en", show: "🇬🇧" },
+    { name: "عربي", code: "ar", show: "🇸🇦" },
   ];
   //--------------------------------------------------------------------
   // Functions

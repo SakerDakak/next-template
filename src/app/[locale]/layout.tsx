@@ -6,6 +6,8 @@ import InfoX from "@/config/info/info";
 import Header from "@/ui/sections/header/header";
 import Footer from "@/ui/sections/footer/footer";
 import type { Viewport } from "next";
+import ThemeX from "@/config/theme/theme";
+import getLangDirection from "@/core/utils/langDirection";
 
 const font = Cairo({ subsets: ["arabic"] });
 
@@ -24,11 +26,12 @@ export function generateStaticParams() {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
+  minimumScale: 1,
+  maximumScale: 5,
   userScalable: false,
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
+    { media: "(prefers-color-scheme: light)", color: ThemeX.themeColorLight },
+    { media: "(prefers-color-scheme: dark)", color: ThemeX.themeColorDark },
   ],
 };
 
@@ -81,11 +84,11 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
   TranslationX.setRequestLocale(locale);
 
   return (
-    <html lang={locale} className={locale} suppressHydrationWarning>
+    <html lang={locale} dir={getLangDirection(locale)} suppressHydrationWarning>
       <body className={font.className} suppressHydrationWarning={true}>
         <ThemeProvider>
           <main className="flex flex-col justify-between min-h-screen w-full">
-            <Header />
+            <Header locale={locale} />
             <div className="mt-nav">{children}</div>
             <Footer />
           </main>

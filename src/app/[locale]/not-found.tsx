@@ -7,7 +7,7 @@ export default function NotFoundPage() {
   const t = TranslationX.t(TranslationX.namespace.notFound);
 
   return (
-    <div className="h-screen w-full flex flex-col justify-center items-center dark:bg-black">
+    <div className="h-[85vh] w-full flex flex-col justify-center items-center dark:bg-black">
       <h1 className="leading-none text-9xl text-[10rem] font-extrabold tracking-widest">
         404
       </h1>

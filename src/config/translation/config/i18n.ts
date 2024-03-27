@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getRequestConfig } from "next-intl/server";
-import TranslationX from "./config/translation/translation";
+import TranslationX from "../translation";
 
 export default getRequestConfig(async ({ locale }) => {
   // Validate that the incoming `locale` parameter is valid
@@ -10,8 +10,8 @@ export default getRequestConfig(async ({ locale }) => {
     messages: (
       await (locale === "en"
         ? // When using Turbopack, this will enable HMR for `en`
-          import("./config/translation/locales/en.json")
-        : import(`./config/translation/locales/${locale}.json`))
+          import("../locales/en.json")
+        : import(`../locales/${locale}.json`))
     ).default,
   };
 });

@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Logo({
-  classSize,
   className,
   isHorizontal = false,
   isVertical = false,
@@ -14,7 +13,6 @@ export default function Logo({
   isHorizontal?: boolean;
   isVertical?: boolean;
   darkMode?: boolean;
-  classSize?: string;
   className?: string;
 }) {
   const t = TranslationX.t(TranslationX.namespace.basic);
@@ -24,10 +22,10 @@ export default function Logo({
     ? ImageX.logo_v
     : ImageX.logo;
   return (
-    <Link href="/" className={clsx("cursor-pointer", classSize)}>
+    <Link href="/" className={clsx("cursor-pointer", className)}>
       <Image
         className={clsx(
-          "h-full w-full mx-auto",className,
+          "h-full w-full object-contain",
           darkMode ? "dark:filter dark:invert" : ""
         )}
         alt={t("logo-alt")}

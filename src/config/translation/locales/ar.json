@@ -1,6 +1,15 @@
 {
-  "Basic":{
-    "logo-alt": "وصف الشعار"
+  "Basic": {
+    "logo-alt": "وصف الشعار",
+    "Theme": {
+      "dark": "داكن",
+      "light": "فاتح",
+      "system": "ثيم النظام",
+      "screen-reader": "تغيير الثيم"
+    },
+    "Language": {
+      "screen-reader": "تغيير اللغة"
+    }
   },
   "Metadata": {
     "title": "عنوان",
@@ -14,7 +23,7 @@
   },
   "NotFound": {
     "title": "الصفحة غير موجودة",
-    "go-home":"العودة إلى الرئيسية"
+    "go-home": "العودة إلى الرئيسية"
   },
   "Error": {
     "title": "!خطاء"
@@ -22,7 +31,7 @@
   "Navbar": {
     "home": "الرئيسية",
     "about": "حول",
-    "contant":"تواصل معنا"
+    "contant": "تواصل معنا"
   },
   "Footer": {
     "copyright": "حقوق الطبع والنشر © {year}، جميع الحقوق محفوظة."

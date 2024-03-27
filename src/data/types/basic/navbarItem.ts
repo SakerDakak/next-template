@@ -1,4 +1,4 @@
-import { AppPathnames } from "@/navigation";
+import { AppPathnames } from "@/config/navigation/i18nNavigation";
 import React from "react";
 
 export interface NavbarItem {

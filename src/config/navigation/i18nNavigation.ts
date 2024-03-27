@@ -1,5 +1,8 @@
-import { Pathnames, createLocalizedPathnamesNavigation } from "next-intl/navigation";
-import TranslationX from "./config/translation/translation";
+import {
+  Pathnames,
+  createLocalizedPathnamesNavigation,
+} from "next-intl/navigation";
+import TranslationX from "../translation/translation";
 
 // change path name by language
 export const pathnames = {
@@ -20,5 +23,3 @@ export const { Link, redirect, usePathname, useRouter } =
     localePrefix: TranslationX.localePrefix,
     pathnames: pathnames,
   });
-
-

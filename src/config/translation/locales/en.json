@@ -1,6 +1,15 @@
 {
   "Basic": {
-    "logo-alt": "Logo"
+    "logo-alt": "Logo",
+    "Theme": {
+      "dark": "Dark",
+      "light": "Light",
+      "system": "System",
+      "screen-reader": "Toggle Theme"
+    },
+    "Language": {
+      "screen-reader": "Toggle Language"
+    }
   },
   "Metadata": {
     "title": "title",
