@@ -26,9 +26,9 @@ export function generateStaticParams() {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  minimumScale: 1,
-  maximumScale: 5,
   userScalable: false,
+  // minimumScale: 1,
+  // maximumScale: 4,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: ThemeX.themeColorLight },
     { media: "(prefers-color-scheme: dark)", color: ThemeX.themeColorDark },
